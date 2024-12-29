@@ -1,3 +1,4 @@
+
 # Biomedical Text Extraction
 
 This repository contains tools and methods for creating a pipeline to extract, analyze, and visualize data from biomedical text sources such as PubMed. The project leverages advanced Natural Language 
@@ -45,11 +46,15 @@ The repository is organized as follows:
 
 ## Usage
 
-### Example Workflow
+###  Workflow
 
 1. **Input Data**: Provide PubMed data or related biomedical text files.
 2. **Run Notebook**: Open a Jupyter notebook from the `pubmed/notebooks/` directory and follow the instructions for each stage of the pipeline.
 3. **Extract High-Quality Papers**: Use feature importance to rank papers.
 4. **Build Knowledge Graphs**: Extract entities and relationships, then populate the graph database.
 
+### Hosted Notebook on nbviewer
+
+You can view the exploratory data analysis on nbviewer: 
+[Pubmed_EDA_part2.ipynb](https://nbviewer.org/github/amulya-incorrigible/Biomedical-Text-Extraction/blob/main/pubmed/Notebooks/Pubmed_EDA_part2.ipynb)
 
