@@ -1,8 +1,20 @@
 
 # Biomedical Text Extraction
 
-This repository contains tools and methods for creating a pipeline to extract, analyze, and visualize data from biomedical text sources such as PubMed. The project leverages advanced Natural Language 
-Processing (NLP) techniques, data visualization, and knowledge graph construction to streamline the process of identifying high-quality biomedical research papers and making their insights accessible.
+PubMed is a vast repository of medical research papers that provides API access to its wealth of data. This data can be harnessed to build knowledge graphs for healthbots and recommender systems. However, a significant challenge lies in sorting the papers effectively: while some journals have high impact factors, others do not. To address this, the current project introduces a scoring method using an unsupervised learning approach.
+
+## Problem Overview
+
+The sorting of papers is based on various features such as:
+- Citation count
+- Impact factor of the journal
+- Research score of the university
+- Study type
+
+Due to limitations in web scraping, only the impact factor and research score of universities could be scraped. In this project:
+- Data scraping is achieved for impact factors and research scores from different sources.
+- The extracted data is merged into a single dataframe.
+- GLiner transformer is used to extract entities like universities and study types.
 
 ## Key Features
 
@@ -32,7 +44,7 @@ The repository is organized as follows:
 3. **Feature Importance**:
    - Determine and weigh critical features to filter high-quality papers.
 4. **Entity and Relationship Extraction**:
-   - Utilize Llama 3.1 to extract entities and relationships.
+   - Utilize BERN2 to extract entities and LLama 3.1 to identify the relationships.
    - Build knowledge graphs using Neo4j.
 5. **Chatbot Integration**:
    - Use knowledge graphs to power a chatbot for healthcare providers, offering insights and explainability.
@@ -43,18 +55,3 @@ The repository is organized as follows:
    ```bash
    git clone https://github.com/amulya-incorrigible/Biomedical-Text-Extraction.git
    cd Biomedical-Text-Extraction
-
-## Usage
-
-###  Workflow
-
-1. **Input Data**: Provide PubMed data or related biomedical text files.
-2. **Run Notebook**: Open a Jupyter notebook from the `pubmed/notebooks/` directory and follow the instructions for each stage of the pipeline.
-3. **Extract High-Quality Papers**: Use feature importance to rank papers.
-4. **Build Knowledge Graphs**: Extract entities and relationships, then populate the graph database.
-
-### Hosted Notebook on nbviewer
-
-You can view the exploratory data analysis on nbviewer: 
-[Pubmed_EDA_part2.ipynb](https://nbviewer.org/github/amulya-incorrigible/Biomedical-Text-Extraction/blob/main/pubmed/Notebooks/Pubmed_EDA_part2.ipynb)
-
