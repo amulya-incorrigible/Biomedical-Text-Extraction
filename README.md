@@ -1,7 +1,11 @@
 
 # Biomedical Text Extraction
 
-PubMed is a vast repository of medical research papers that provides API access to its wealth of data. This data can be harnessed to build knowledge graphs for healthbots and recommender systems. However, a significant challenge lies in sorting the papers effectively: while some journals have high impact factors, others do not. To address this, the current project introduces a scoring method using an unsupervised learning approach.
+PubMed is a vast repository of medical research papers that provides API access to an extensive wealth of data. This treasure trove of information can be harnessed to construct knowledge graphs for applications such as healthbots and recommender systems. However, an inherent challenge lies in effectively sorting and analyzing these papers: while some journals boast high impact factors, others may not meet the same standards. Addressing this, the current project serves as a proof of concept, showcasing a comprehensive approach that combines advanced methods for scoring, extracting, and analyzing high-quality papers.
+
+The project introduces an unsupervised learning-based scoring system to rank papers based on features such as journal impact factors, university research scores, and study types. In addition to scoring, Named Entity Recognition (NER) is performed using cutting-edge biomedical transformers to identify critical entities such as researchers, institutions, and study attributes. Relationships between these entities are further elucidated through advanced techniques leveraging Llama 3.1. This extracted information forms the foundation for constructing sophisticated knowledge graphs, enabling enhanced insights and explainability.
+
+While this project lays the groundwork for these capabilities, it is merely a starting point. With the rapid advancements in Large Language Models (LLMs) and other AI technologies, numerous improvements can be envisioned. These include refining entity extraction, enhancing relationship modeling, and integrating more dynamic scoring methods, ultimately expanding the potential applications and impact of this system in real-world scenarios.
 
 ## Problem Overview
 
