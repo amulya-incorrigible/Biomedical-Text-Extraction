@@ -59,9 +59,4 @@ The repository is organized as follows:
 You can view the exploratory data analysis on nbviewer: [Pubmed_EDA_part2.ipynb](https://nbviewer.org/github/amulya-incorrigible/Biomedical-Text-Extraction/blob/main/pubmed/Notebooks/Pubmed_EDA_part2.ipynb)
 
 
-## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/amulya-incorrigible/Biomedical-Text-Extraction.git
-   cd Biomedical-Text-Extraction
